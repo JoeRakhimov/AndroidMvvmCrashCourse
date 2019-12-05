@@ -1,27 +1,28 @@
-package com.joerakhimov.mvvmcrashcourse.s1_simple_example
+package com.joerakhimov.mvvmcrashcourse.e2_mvp_example
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import androidx.lifecycle.Observer
 import com.joerakhimov.mvvmcrashcourse.R
 import kotlinx.android.synthetic.main.activity_example.*
 
-class ExampleActivity : AppCompatActivity() {
+class MvpExampleActivity : AppCompatActivity(), ExampleView {
 
-    private val viewModel = ExampleViewModel()
+    val presenter = ExamplePresenter(this)
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_example)
 
+        presenter.init()
+
         buttonIncrement.setOnClickListener {
-            viewModel.onIncrementButtonClick()
+            presenter.onIncrementButtonClick()
         }
 
-        viewModel.clicksAmount.observe(this, Observer {
-            textResult.text = it.toString()
-        })
+    }
 
+    override fun showClicksAmount(clicksAmount: Int) {
+        textResult.text = clicksAmount.toString()
     }
 
 }

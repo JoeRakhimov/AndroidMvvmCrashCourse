@@ -1,4 +1,4 @@
-package com.joerakhimov.mvvmcrashcourse.s1_simple_example
+package com.joerakhimov.mvvmcrashcourse.e1_mvvm_example
 
 import androidx.lifecycle.MutableLiveData
 
@@ -9,12 +9,16 @@ class ExampleViewModel {
     val clicksAmount = MutableLiveData<Int>()
 
     init {
+        updateClicksAmount()
+    }
+
+    private fun updateClicksAmount() {
         clicksAmount.value = model.getClicksAmount()
     }
 
     fun onIncrementButtonClick() {
         model.incrementClicksAmount()
-        clicksAmount.value = model.getClicksAmount()
+        updateClicksAmount()
     }
 
 }
