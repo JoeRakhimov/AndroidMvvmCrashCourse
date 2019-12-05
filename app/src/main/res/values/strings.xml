@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">AndroidMvvmCrashCourse</string>
+    <string name="increment">Increment</string>
+</resources>
