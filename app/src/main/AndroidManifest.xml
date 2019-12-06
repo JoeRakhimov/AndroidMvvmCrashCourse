@@ -11,13 +11,6 @@
         android:theme="@style/AppTheme">
 
         <activity android:name=".e1_mvvm_example.ExampleActivity">
-        </activity>
-
-        <activity android:name=".e2_mvp_example.MvpExampleActivity">
-        </activity>
-
-        <activity
-            android:name=".e3_mvc_example.MvcExampleActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />
