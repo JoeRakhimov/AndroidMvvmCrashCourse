@@ -1,6 +1,7 @@
 package com.joerakhimov.mvvmcrashcourse.e1_mvvm_example
 
 import androidx.lifecycle.MutableLiveData
+import com.joerakhimov.mvvmcrashcourse.ExampleModel
 
 class ExampleViewModel {
 

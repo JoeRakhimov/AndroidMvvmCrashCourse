@@ -6,7 +6,7 @@ import androidx.lifecycle.Observer
 import com.joerakhimov.mvvmcrashcourse.R
 import kotlinx.android.synthetic.main.activity_example.*
 
-class ExampleActivity : AppCompatActivity() {
+class MvvmExampleActivity : AppCompatActivity() {
 
     private val viewModel = ExampleViewModel()
 

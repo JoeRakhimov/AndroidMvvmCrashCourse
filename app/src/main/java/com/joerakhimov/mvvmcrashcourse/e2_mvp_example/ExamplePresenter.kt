@@ -1,6 +1,6 @@
 package com.joerakhimov.mvvmcrashcourse.e2_mvp_example
 
-import com.joerakhimov.mvvmcrashcourse.e1_mvvm_example.ExampleModel
+import com.joerakhimov.mvvmcrashcourse.ExampleModel
 
 class ExamplePresenter(private val view: ExampleView) {
 
