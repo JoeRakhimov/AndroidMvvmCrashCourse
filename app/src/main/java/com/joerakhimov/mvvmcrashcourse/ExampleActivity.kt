@@ -1,9 +1,8 @@
-package com.joerakhimov.mvvmcrashcourse.e1_mvvm_example
+package com.joerakhimov.mvvmcrashcourse
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.lifecycle.Observer
-import com.joerakhimov.mvvmcrashcourse.R
 import kotlinx.android.synthetic.main.activity_example.*
 
 class ExampleActivity : AppCompatActivity() {
