@@ -29,15 +29,20 @@ class CouponActivity : AppCompatActivity() {
             override fun afterTextChanged(s: Editable?) {}
             override fun beforeTextChanged(s: CharSequence?, start: Int, count: Int, after: Int) {}
             override fun onTextChanged(s: CharSequence?, start: Int, before: Int, count: Int) {
+
                 val couponCode = s.toString()
-                viewModel.onCouponCodeChanged(couponCode)
+
+                // TODO 1: pass coupon code to ViewModel
+
             }
         })
     }
 
     private fun observeIsCouponCodeValid() {
         viewModel.isCouponCodeValid.observe(this, Observer {
-            buttonApplyCoupon.isEnabled = it
+
+            // TODO 4: enable or disable 'Apply Coupon' button
+
         })
     }
 

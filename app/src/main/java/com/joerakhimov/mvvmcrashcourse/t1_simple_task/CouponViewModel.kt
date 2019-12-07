@@ -13,7 +13,9 @@ class CouponViewModel {
     }
 
     fun onCouponCodeChanged(couponCode: String) {
-        isCouponCodeValid.value = model.isCouponCodeValid(couponCode)
+
+        // TODO 2: validate coupon code using Model and set result to isCouponCodeValid
+
     }
 
 }
