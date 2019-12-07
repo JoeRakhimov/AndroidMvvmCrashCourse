@@ -3,6 +3,7 @@ package com.joerakhimov.mvvmcrashcourse.t1_simple_task
 import android.os.Bundle
 import android.text.Editable
 import android.text.TextWatcher
+import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import androidx.lifecycle.Observer
 import com.joerakhimov.mvvmcrashcourse.R
@@ -20,6 +21,8 @@ class CouponActivity : AppCompatActivity() {
 
         initCouponCodeInput()
 
+        initApplyCouponButton()
+
         observeIsCouponCodeValid()
 
     }
@@ -35,10 +38,18 @@ class CouponActivity : AppCompatActivity() {
         })
     }
 
+    private fun initApplyCouponButton() {
+        buttonApplyCoupon.setOnClickListener {
+            Toast.makeText(this, getString(R.string.coupon_applied), Toast.LENGTH_LONG).show()
+        }
+    }
+
     private fun observeIsCouponCodeValid() {
         viewModel.isCouponCodeValid.observe(this, Observer {
             buttonApplyCoupon.isEnabled = it
         })
     }
+
+
 
 }

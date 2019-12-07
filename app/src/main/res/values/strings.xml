@@ -3,4 +3,5 @@
     <string name="increment">Increment</string>
     <string name="title_activity_mvc_example">MvcExampleActivity</string>
     <string name="apply_coupon">Apply coupon</string>
+    <string name="coupon_applied">Coupon applied</string>
 </resources>
