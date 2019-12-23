@@ -1,8 +1,10 @@
-package com.joerakhimov.mvvmcrashcourse.e1_mvvm_example
+package com.joerakhimov.mvvmcrashcourse
 
 import androidx.lifecycle.MutableLiveData
+import androidx.lifecycle.ViewModel
+import com.joerakhimov.mvvmcrashcourse.ExampleModel
 
-class ExampleViewModel {
+class ExampleViewModel: ViewModel() {
 
     private val model = ExampleModel()
 

@@ -1,4 +1,4 @@
-package com.joerakhimov.mvvmcrashcourse.e1_mvvm_example
+package com.joerakhimov.mvvmcrashcourse
 
 class ExampleModel {
 
