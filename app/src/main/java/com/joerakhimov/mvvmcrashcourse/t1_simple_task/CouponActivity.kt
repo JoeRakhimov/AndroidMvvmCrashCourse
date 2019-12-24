@@ -11,13 +11,13 @@ import kotlinx.android.synthetic.main.activity_coupon.*
 
 class CouponActivity : AppCompatActivity() {
 
-    val viewModel = CouponViewModel()
+    val viewModel: CouponViewModel? = null
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_coupon)
 
-        viewModel.init()
+        viewModel?.init()
 
         initCouponCodeInput()
 
@@ -33,7 +33,7 @@ class CouponActivity : AppCompatActivity() {
             override fun beforeTextChanged(s: CharSequence?, start: Int, count: Int, after: Int) {}
             override fun onTextChanged(s: CharSequence?, start: Int, before: Int, count: Int) {
                 val couponCode = s.toString()
-                viewModel.onCouponCodeChanged(couponCode)
+                viewModel?.onCouponCodeChanged(couponCode)
             }
         })
     }
@@ -45,7 +45,7 @@ class CouponActivity : AppCompatActivity() {
     }
 
     private fun observeIsCouponCodeValid() {
-        viewModel.isCouponCodeValid.observe(this, Observer {
+        viewModel?.isCouponCodeValid?.observe(this, Observer {
             buttonApplyCoupon.isEnabled = it
         })
     }

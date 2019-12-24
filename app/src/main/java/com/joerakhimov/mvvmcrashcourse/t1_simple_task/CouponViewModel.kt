@@ -1,8 +1,9 @@
 package com.joerakhimov.mvvmcrashcourse.t1_simple_task
 
 import androidx.lifecycle.MutableLiveData
+import androidx.lifecycle.ViewModel
 
-class CouponViewModel {
+class CouponViewModel: ViewModel() {
 
     private val model = CouponModel()
 
