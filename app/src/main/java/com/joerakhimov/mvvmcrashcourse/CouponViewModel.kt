@@ -1,4 +1,4 @@
-package com.joerakhimov.mvvmcrashcourse.t1_simple_task
+package com.joerakhimov.mvvmcrashcourse
 
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel

@@ -1,4 +1,4 @@
-package com.joerakhimov.mvvmcrashcourse.t1_simple_task
+package com.joerakhimov.mvvmcrashcourse
 
 import android.os.Bundle
 import android.text.Editable
@@ -7,7 +7,6 @@ import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProviders
-import com.joerakhimov.mvvmcrashcourse.R
 import kotlinx.android.synthetic.main.activity_coupon.*
 
 class CouponActivity : AppCompatActivity() {
